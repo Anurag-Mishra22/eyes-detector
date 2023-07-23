@@ -23,7 +23,7 @@ for img_path in os.listdir(data_dir):
     for face in faces:
         x1, y1, w, h = face
          
-        img = cv2.rectangle(img, (x1, y1), (x1+w, y1+h), (0, 255, 0), 2)
+        # img = cv2.rectangle(img, (x1, y1), (x1+w, y1+h), (0, 255, 0), 2)
         
         factor = 2
         face_ = img_gray[y1:y1 + h, x1:x1 + w]
